@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="238px" height="238px" viewBox="0 0 238 238" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-12.000000, -7.000000)" stroke="#950000" stroke-width="2">
+            <g id="Group" transform="translate(13.000000, 8.000000)">
+                <path d="M200,0 C219.882251,0 236,16.117749 236,36 L236,79 L162,79 L162,0 L200,0 Z" id="Path" fill="#CA3900"></path>
+                <path d="M195.891892,9 C213.62471,9 228,23.2815498 228,40.8987342 L228,79 L162,79 L162,9 L195.891892,9 Z" id="Path-Copy-2" fill="#E7A185"></path>
+                <path d="M157,5 L157,84 L231,84 L231,200 C231,219.882251 214.882251,236 195,236 L36,236 C16.117749,236 0,219.882251 0,200 L0,41 C0,21.117749 16.117749,5 36,5 L157,5 Z" id="Path" fill="#CA3900"></path>
+                <path d="M157.08658,14 L157.08658,84.0485866 L223,84.0485866 L223,192.961039 C223,211.207953 208.207953,226 189.961039,226 L44.038961,226 C25.7920467,226 11,211.207953 11,192.961039 L11,47.038961 C11,28.7920467 25.7920467,14 44.038961,14 L157.08658,14 Z" id="Path-Copy" fill="#E5AA4A"></path>
+            </g>
+        </g>
+    </g>
+</svg>

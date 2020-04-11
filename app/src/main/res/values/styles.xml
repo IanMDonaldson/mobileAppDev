@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="PizzaTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="chipStyle">@style/</item>
+    </style>
+
+    <style name="PizzaTheme.Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/primaryColor</item>
+        <item name="android:textColor">@color/primaryColor</item>
+    </style>
+
+    <style name="PizzaTheme.pizzaTypeSelected" parent="Widget.MaterialComponents.Button">
+        <item name="materialButtonOutlinedStyle">@color/primaryLightColor</item>
+        <item name="android:textColor">@color/primaryLightColor</item>
+    </style>
+
+    <style name="PizzaTheme.pizzaTypeUnselected" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/secondaryLighterColor</item>
+    </style>
+</resources>
