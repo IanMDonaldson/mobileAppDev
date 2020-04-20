@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/deviceListItemRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_20"
+    android:backgroundTint="@color/grey_5"
+    android:padding="@dimen/margin_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/deviceImagesConstraintLayout"
+        android:layout_width="73dp"
+        android:layout_height="74dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/deviceBackdropImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/thumbnail_background_solid" />
+
+        <ImageView
+            android:id="@+id/deviceConnStatusImageView"
+            android:layout_width="12dp"
+            android:layout_height="13dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/deviceBackdropImageView"
+            app:layout_constraintEnd_toEndOf="@+id/deviceBackdropImageView"
+            app:layout_constraintStart_toEndOf="@+id/deviceTypeImageView"
+            app:srcCompat="@drawable/status_mark_ready" />
+
+        <ImageView
+            android:id="@+id/deviceTypeImageView"
+            android:layout_width="30dp"
+            android:layout_height="37dp"
+            android:foregroundTint="@color/grey_10"
+            android:foregroundTintMode="src_atop"
+            android:tint="@color/grey_5"
+            app:layout_constraintBottom_toBottomOf="@+id/deviceBackdropImageView"
+            app:layout_constraintEnd_toEndOf="@+id/deviceBackdropImageView"
+            app:layout_constraintStart_toStartOf="@+id/deviceBackdropImageView"
+            app:layout_constraintTop_toTopOf="@+id/deviceBackdropImageView"
+            app:srcCompat="@drawable/ic_pc" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/connectButtonConstraintLayout"
+        android:layout_width="75dp"
+        android:layout_height="73dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/connectImageButton"
+            android:layout_width="86dp"
+            android:layout_height="83dp"
+            android:backgroundTint="@color/grey_5"
+            android:foregroundTint="@color/rippleStyleBlack"
+            android:tint="@color/rippleStyleBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_connection_btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/deviceNameTextView"
+        android:layout_width="213dp"
+        android:layout_height="36dp"
+        android:text="TextView"
+        android:textColor="@color/grey_40"
+        app:layout_constraintEnd_toStartOf="@+id/connectButtonConstraintLayout"
+        app:layout_constraintStart_toEndOf="@+id/deviceImagesConstraintLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="313dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="82dp" />
+
+    <TextView
+        android:id="@+id/connectionTimestampTextView"
+        android:layout_width="174dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="13dp"
+        android:text="TextView"
+        android:textColor="@color/grey_40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/connectButtonConstraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/deviceNameTextView" />
+
+    <ImageView
+        android:id="@+id/connectionTimestampImageView"
+        android:layout_width="19dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="8dp"
+        android:tint="@color/grey_40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/connectionTimestampTextView"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/deviceNameTextView"
+        app:layout_constraintVertical_bias="0.36"
+        app:srcCompat="@drawable/ic_schedule_24px" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
